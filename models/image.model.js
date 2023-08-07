@@ -11,6 +11,6 @@ const imageSchema = new Schema({
   },
 });
 
-const Image = model("Image", imageSchema);
+const Image = model("images", imageSchema);
 
 module.exports.Image = Image;
