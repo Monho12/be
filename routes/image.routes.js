@@ -8,8 +8,8 @@ const {
 const router = express.Router();
 
 router
-  .get("/image/:id", getImage)
   .get("/images", getImages)
+  .get("/image/:id", getImage)
   .post("/image", postImage);
 
 module.exports.imageRoutes = router;

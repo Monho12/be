@@ -1,11 +1,11 @@
-require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+require("dotenv").config();
 const connect = require("./config/db");
 
 const { imageRoutes } = require("./routes/image.routes");
 
-const port = process.env.PORT || 7000;
+const port = process.env.PORT;
 
 const app = express();
 
