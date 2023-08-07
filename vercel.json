@@ -12,8 +12,7 @@
       "dest": "server.js",
       "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
       "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Cache-Control": "s-maxage=1, stale-while-revalidate"
+        "Access-Control-Allow-Origin": "*"
       }
     }
   ]
