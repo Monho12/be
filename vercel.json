@@ -16,7 +16,7 @@
         "Cache-Control": "s-maxage=1, stale-while-revalidate"
       },
       "config": {
-        "maxDuration": 1200
+        "maxDuration": 60
       }
     }
   ]
