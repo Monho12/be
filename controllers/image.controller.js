@@ -5,7 +5,7 @@ exports.getImages = async (_req, res) => {
     const result = await Image.find({});
     res.send(result);
   } catch (err) {
-    res.send("aldaa garlaa");
+    res.send(err);
   }
 };
 
