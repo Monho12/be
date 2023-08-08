@@ -3,7 +3,8 @@ const { Image } = require("../models/image.model");
 exports.getImages = async (_req, res) => {
   try {
     const result = await Image.find({});
-    res.send(result);
+
+    return res.send(result);
   } catch (err) {
     res.send(err);
   }
@@ -12,7 +13,7 @@ exports.getImages = async (_req, res) => {
 exports.getImage = async (req, res) => {
   try {
     const result = await Image.findById(req.params.id);
-    res.send(result);
+    return res.send(result);
   } catch (err) {
     res.send(err);
   }
@@ -24,7 +25,7 @@ exports.postImage = async (req, res) => {
     const result = await new Image({
       Url,
     }).save();
-    res.send(result);
+    return res.send(result);
   } catch (err) {
     res.send(err);
   }
