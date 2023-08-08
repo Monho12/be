@@ -7,12 +7,12 @@ const { imageRoutes } = require("./routes/image.routes");
 
 const port = process.env.PORT;
 
+connect();
+
 const app = express();
 
 app.use(cors());
 app.use(express.json());
-
-connect();
 
 app.use(imageRoutes);
 
