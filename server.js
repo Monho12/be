@@ -9,10 +9,10 @@ const port = process.env.PORT;
 
 const app = express();
 
-connect();
-
 app.use(cors());
 app.use(express.json());
+
+connect();
 
 app.use(imageRoutes);
 

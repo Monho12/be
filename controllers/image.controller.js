@@ -3,7 +3,6 @@ const { Image } = require("../models/image.model");
 exports.getImages = async (_req, res) => {
   try {
     const result = await Image.find({});
-
     return res.send(result);
   } catch (err) {
     res.send(err);
