@@ -1,7 +1,7 @@
 {
   "name": "be",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "https://github.com/Monho12/be.git",
   "author": "Monho12 <oorgilmojo@gmail.com>",
   "license": "MIT",
