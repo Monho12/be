@@ -9,7 +9,7 @@ const router = express.Router();
 
 router
   .get("/images", getImages)
-  .get("/image/:id", getImage)
-  .post("/image", postImage);
+  // .get("/image/:id", getImage)
+  // .post("/image", postImage);
 
 module.exports.imageRoutes = router;
