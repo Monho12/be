@@ -29,3 +29,12 @@ exports.postImage = async (req, res) => {
     res.send(err);
   }
 };
+
+exports.deleteImage = async (req, res) => {
+  try {
+    const result = await Image.findByIdAndDelete(req.params.id);
+    res.send(result);
+  } catch (error) {
+    res.send(error);
+  }
+};
