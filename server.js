@@ -4,6 +4,7 @@ require("dotenv").config();
 const connect = require("./config/db");
 
 const { imageRoutes } = require("./routes/image.routes");
+const { AlbumRoutes } = require("./routes/album.routes");
 
 const port = process.env.PORT;
 
@@ -15,6 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use(imageRoutes);
+app.use(AlbumRoutes);
 
 app.get("/", (_req, res) => {
   res.send("GOODBYE WORLD!");
